@@ -1,0 +1,452 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.titulo {
+    text-align: left;
+    margin: 10px;
+}
+
+
+
+.navegacion,
+.thee {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navegacion,
+.thee,
+.t {
+    text-align: center;
+}
+
+.navegacion {
+    padding: 5px;
+    top: 0%;
+}
+
+.titulo,
+a {
+    color: #3287cc;
+}
+
+.masthead,
+.cont {
+    text-align: left;
+}
+
+
+.position-heder {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.section-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    opacity: 3;
+
+}
+
+
+.result {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+.result,
+.result-product {
+    background-color: #f2f2f2;
+
+}
+
+.result,
+.result-text {}
+
+.result img {
+    width: 300px;
+    height: auto;
+    border: 1px solid #443b3b;
+
+}
+
+.edition {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header,
+.result {
+    width: 50%;
+}
+
+h1,
+h5 {
+    color: var(--color-text);
+    margin: 0;
+}
+
+
+
+
+
+li {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    position: static;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: color 0.3s ease;
+}
+
+
+
+.one,
+.t,
+.a {
+    text-decoration: none;
+    color: #f1f0f0;
+}
+
+.one,
+.t a:hover {
+    background-color: #c46565;
+}
+
+.one {
+    background-color: #1d1b1b;
+    list-style-type: none;
+    text-align: left;
+    padding: 9px;
+    position: relative;
+    /* Ajusta según sea necesario */
+}
+
+
+.sesion {
+    background-color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0%;
+}
+
+.sesion,
+.s,
+.a {
+    color: #f1f0f0;
+}
+
+.sesion,
+.s,
+.a:hover {
+    background-color: #c46565;
+}
+
+
+.footer {
+    margin-top: auto;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 0.8em;
+    position: relative;
+    background-color: #494444;
+    color: #fff;
+    text-align: center;
+
+}
+
+
+.fooder,
+.contacto {
+    margin-bottom: 0%;
+    margin-top: 15px;
+}
+
+.foder,
+.espacios-redes {
+    margin-top: 0%;
+}
+
+.fooder,
+.espacios-foder {
+    height: auto !important;
+    padding-inline: 3px;
+    margin-bottom: 0%;
+    margin-top: 1%;
+
+}
+
+.fooder,
+.iconos {
+    border-radius: 10px;
+    border-color: #f1f0f0;
+    border-style: solid;
+}
+
+.logine {
+    position: absolute;
+    padding: 5px;
+    border-radius: 5%;
+    border-color: #333;
+    border-width: 2px;
+    border-style: solid;
+    top: 4cm;
+    width: 25%;
+    left: 12cm;
+}
+
+.section-tipos-productos {
+    position: fixed;
+    margin: 10px;
+    width: 20%;
+    left: 2px;
+    border: solid;
+}
+
+.titulo-menu {
+    text-align: left;
+}
+
+.nav.nav-tabs {
+    justify-content: flex-start;
+    /* Añade esta línea para alinear a la izquierda */
+}
+
+.nav.nav-tabs a:hover {
+    background-color: #2980b9;
+
+}
+
+.align-right {
+    margin-left: auto;
+    /* Mueve el elemento a la derecha */
+}
+
+.card-header {
+    color: #1d1b1b;
+
+}
+
+
+
+
+
+
+.menu-column {
+    float: left;
+}
+
+.main-content {
+    margin-left: 220px;
+}
+
+.body_home {
+    font-family: 'Arial', sans-serif;
+
+    background-color: #f8f8f8;
+}
+
+.container_home {
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(54, 49, 49, 0.7);
+    /* 0.9 representa la opacidad, ajusta según tus necesidades */
+    color: #fff;
+}
+
+.slogan {
+    align-items: center;
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+.ProductosTodos {
+    background-color: rgba(85, 65, 65, 0.1);
+    position: absolute;
+    color: #130f0f;
+    padding: 10px;
+}
+
+.ProductosTodos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.ProductosTodos li {
+    margin-bottom: 10px;
+    text-align: left;
+    display: block;
+}
+
+#contendItmCarrusel {
+    height: 400px;
+    overflow: hidden;
+}
+
+.item_carrusel {
+    border: 1px solid black;
+    height: 400px;
+    position: relative;
+}
+
+.tarjeta_carrusel {
+    background-color: rgba(82, 75, 75, 0.1);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.ImgCocina {
+    width: 70%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.class_flechas {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.ProductosCocina {
+    background-color: rgba(8, 8, 8, 0.3);
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    color: #f2f2f2;
+    padding: 10px;
+    z-index: 1;
+}
+
+.ProductosCocina ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.ProductosCocina li {
+    margin-bottom: 10px;
+    text-align: left;
+    display: block;
+}
+
+
+.container_productos {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    /* Esto distribuirá los elementos de manera uniforme */
+}
+
+.container_productos {
+    max-width: 1000px;
+}
+
+
+.contain_producto {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card_todo {
+    width: 250px;
+    /* Ancho fijo del menú lateral */
+}
+
+.card.Todos {
+    width: 200px;
+    /* Ancho fijo de las tarjetas */
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.body_producto {
+    display: flex;
+}
+
+.card_todo {
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(226, 112, 112, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    border-bottom: 1px solid #8b8787;
+    ;
+}
+
+nav ul ul {
+    height: 0px;
+    overflow: hidden;
+}
+
+nav ul li:hover ul {
+    height: auto;
+}
+
+nav ul a {
+    display: block;
+    width: 100%;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+
+nav ul ul a {
+    background: rgba(158, 137, 137, 0.1);
+}
+
+.container_sesion {
+    color: #0f0a0a;
+    background-color: rgba(63, 57, 57, 0.2);
+    margin-inline: auto;
+    margin: text 40px;
+    width: 80%;
+    border-radius: 30px;
+    border-color: #130f0f;
+    border: solid 1px;
+}
+
+.container_sesion div {
+    font-size: .9em;
+
+}
+
+.container_sesion.helptext {
+    line-height: 5px;
+}

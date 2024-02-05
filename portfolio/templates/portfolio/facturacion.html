@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+{% block title %}Facturación{% endblock %}
+
+{% block contente %}
+<div class="container">
+    <h2>Facturación</h2>
+    <form method="post" action="{% url 'facturar' %}">
+        {% csrf_token %}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in carrito %}
+                <tr>
+                    <td>{{ item.producto.nombre }}</td>
+                    <td>
+                        <label for="cantidad_{{ item.producto.id }}">Cantidad:</label>
+                        <input type="number" id="cantidad_{{ item.producto.id }}" name="cantidad_{{ item.producto.id }}" value="{{ item.cantidad }}" min="1">
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <button type="submit" class="btn btn-primary">Realizar Pago</button>
+    </form>
+</div>
+{% endblock %}

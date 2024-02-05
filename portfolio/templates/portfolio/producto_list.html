@@ -1,0 +1,32 @@
+
+{% extends 'core/base.html' %}
+{% block contente %}
+  {% load static %}
+
+  {% include "portfolio/includes/productos_menu.html" %}
+<body class="body_producto">
+  <div style="position: fixed; top: 5; right: 0; text-align: right;">
+    <p style="color: black;"></p>
+    {% include "carro/widget.html" %}
+  </div>
+
+  <div class="container_productos">
+    <div class="contain_producto">
+      {% for producto in producto_list %}
+      <div class="card Todos">
+        <img src="{{ producto.image.url }}" class="card_img" alt="{{ producto.nombre }}">
+        <div >
+          <h5 >{{ producto.nombre }}</h5>
+          
+          <p >Precio ={{ producto.precio|striptags|safe|truncatechars:"200" }}</p>
+          
+          <a href="{% url 'carro:agregar' producto.id %}" class="btn btn-primary">Agregar al Carro</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+
+
+{% endblock %}

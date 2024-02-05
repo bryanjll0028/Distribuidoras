@@ -1,0 +1,76 @@
+
+{% block contente %}
+  {% load static %}
+<header class="card_todo">
+    <nav id="contraer">
+        <ul>
+          <li><a href="{% url 'portfolio:productos_por_tipo' tipo='alimentacion' %}">Alimentos</a>
+            <!-- <ul>
+              <li>
+                <a href="">Productos enlatados</a>
+              </li>
+              <li>
+                <a href="{% url 'portfolio:producto' %}">Productos secos (cereales, pasta, arroz)</a>
+              </li>
+              <li>
+                <a href='#'>Productos frescos (frutas, verduras, lácteos)</a>
+              </li>
+            </ul>-->
+          </li>
+          <li><a href="{% url 'portfolio:productos_por_tipo' tipo='Bebidas' %}">Bebidas</a>
+            <!--<ul>
+              <li>
+                <a href='#'>Refrescos y bebidas carbonatadas</a>
+              </li>
+              <li>
+                <a href="#">Aguas embotelladas</a>
+              </li>
+              <li>
+                <a href='#'>Jugos y néctares</a>
+              </li>
+            </ul>-->
+          </li>
+          <li><a href='{% url 'portfolio:productos_por_tipo' tipo='Electrodomésticos' %}'>Electrodomésticos</a>
+            <!-- <ul>
+              <li>
+                <a href='#'>Refrigeradores</a>
+              </li>
+              <li>
+                <a href="#">Cocinas y hornos</a>
+              </li>
+              <li>
+                <a href='#'>Jugos y néctares</a>
+              </li>
+            </ul>-->
+          </li>
+          <li><a href='{% url 'portfolio:productos_por_tipo' tipo='Electrónica' %}'>Electrónica de Consumo</a>
+            <!--<ul>
+              <li>
+                <a href='#'>Teléfonos móviles</a>
+              </li>
+              <li>
+                <a href="#">Computadoras y laptops</a>
+              </li>
+              <li>
+                <a href='#'>Televisores</a>
+              </li>
+            </ul>-->
+          </li>
+          <li><a href='{% url 'portfolio:productos_por_tipo' tipo='Hogar' %}'>Hogar y Decoración</a>
+            <!--<ul>
+              <li>
+                <a href='#'>Muebles</a>
+              </li>
+              <li>
+                <a href="#">Artículos de decoración</a>
+              </li>
+              <li>
+                <a href='#'>Ropa de cama y toallas</a>
+              </li>
+            </ul>-->
+          </li>
+        </ul>
+        
+    </nav> 
+  </header>
+  {% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+{% block contente %}
+  {% load static %}
+  {% include "portfolio/includes/productos_menu.html" %}
+<div class="container_productos">
+    <div class="contain_producto">
+      {% for tipos in tipo_list %}
+    <div class="card Todos">
+        <img src="{{ tipos.image.url }}" class="card_img" alt="{{ tipos.nombre_tipo }}">
+        <div>
+            <h5>{{ tipos.nombre_tipo }}</h5>
+        </div>
+    </div>
+    tipo: {{ tipos.nombre_tipo }}
+{% endfor %}
+
+    </div>
+</div>
+  {% endblock %}

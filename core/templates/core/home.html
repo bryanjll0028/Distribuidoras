@@ -1,0 +1,162 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+{% block content %}
+<header>
+  <script src="https://kit.fontawesome.com/f7c0ec6e98.js" crossorigin="anonymous"></script>
+</header>
+<body class = "body_home">
+  <div class="container_home">
+    <h1>Distribuidora </h1>
+    <p class="slogan">Tu socio confiable en distribución</p>
+  </div>
+  <div id= "contendItmCarrusel">
+    <div class="item_carrusel" id="cocina">
+      <div class="ProductosCocina">
+        <ul>
+          <li>
+            <a href='{% url 'portfolio:productos_por_tipo' tipo='alimentacion' %}'>Productos enlatados</a>
+          </li>
+          <li>
+            <a href='{% url 'portfolio:productos_por_tipo' tipo='alimentacion' %}'>Productos secos (cereales, pasta, arroz)</a>
+          </li>
+          <li>
+            <a href='{% url 'portfolio:productos_por_tipo' tipo='alimentacion' %}'>Productos frescos (frutas, verduras, lácteos)</a>
+          </li>
+        </ul>
+      </div>
+      <div class= "tarjeta_carrusel">
+        <img class='ImgCocina' src="{% static "imagenes/cocina.jpg" %}" />
+      </div >
+      <div class="class_flechas">
+        <a href='#hogar'>
+          <i class="fa-solid fa-circle-arrow-left"></i>
+        </a>
+        <a href='#bebidas'>
+          <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="item_carrusel" id="bebidas">
+      <div class="ProductosCocina">
+        <ul>
+          <li>
+            <a href='{% url 'portfolio:productos_por_tipo' tipo='Bebidas' %}'>Refrescos y bebidas carbonatadas</a>
+          </li>
+          <li>
+            <a href="{% url 'portfolio:productos_por_tipo' tipo='Bebidas' %}">Aguas embotelladas</a>
+          </li>
+          <li>
+            <a href='{% url 'portfolio:productos_por_tipo' tipo='Bebidas' %}'>Jugos y néctares</a>
+          </li>
+        </ul>
+      </div>
+      <div class= "tarjeta_carrusel">
+        <img class='ImgCocina' src="{% static "imagenes/bebidas.png" %}" />
+      </div >
+      <div class="class_flechas">
+       <a href='#cocina'>
+        <i class="fa-solid fa-circle-arrow-left"></i>
+        </a>
+        <a href='#electrodomesticos'>
+          <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="item_carrusel" id="electrodomesticos">
+      <div class="ProductosCocina">
+        <ul>
+          <li>
+            <a href='{% url 'portfolio:productos_por_tipo' tipo='Electrodomésticos' %}'>Refrigeradores</a>
+          </li>
+          <li>
+            <a href="{% url 'portfolio:productos_por_tipo' tipo='Electrodomésticos' %}">Lavadoras y secadoras</a>
+          </li>
+          <li>
+            <a href='{% url 'portfolio:productos_por_tipo' tipo='Electrodomésticos' %}'>Cocinas y hornos</a>
+          </li>
+        </ul>
+      </div>
+      <div class= "tarjeta_carrusel">
+        <img class='ImgCocina' src="{% static "imagenes/electrodomesticos.webp" %}" />
+      </div >
+      <div class="class_flechas">
+       <a href='#bebidas'>
+        <i class="fa-solid fa-circle-arrow-left"></i>
+        </a>
+        <a href='#electronica'>
+          <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="item_carrusel" id="electronica">
+      <div class="ProductosCocina">
+        <ul>
+          <li>
+            <a href='{% url 'portfolio:productos_por_tipo' tipo='Electrónica' %}'>Teléfonos móviles</a>
+          </li>
+          <li>
+            <a href='{% url 'portfolio:productos_por_tipo' tipo='Electrónica' %}'>Computadoras y laptops</a>
+          </li>
+          <li>
+            <a href='{% url 'portfolio:productos_por_tipo' tipo='Electrónica' %}'>Televisores</a>
+          </li>
+        </ul>
+      </div>
+      <div class= "tarjeta_carrusel">
+        <img class='ImgCocina' src="{% static "imagenes/electronica.jpeg" %}" />
+      </div >
+      <div class="class_flechas">
+       <a href='#electrodomesticos'>
+        <i class="fa-solid fa-circle-arrow-left"></i>
+        </a>
+        <a href='#hogar'>
+          <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="item_carrusel" id="hogar">
+      <div class="ProductosCocina">
+        <ul>
+          <li>
+            <a href='{% url 'portfolio:productos_por_tipo' tipo='Electrónica' %}'>Muebles</a>
+          </li>
+          <li>
+            <a href='{% url 'portfolio:productos_por_tipo' tipo='Electrónica' %}'>Artículos de decoración</a>
+          </li>
+          <li>
+            <a href='{% url 'portfolio:productos_por_tipo' tipo='Electrónica' %}'>Ropa de cama y toallas</a>
+          </li>
+        </ul>
+      </div>
+      <div class= "tarjeta_carrusel">
+        <img class='ImgCocina' src="{% static "imagenes/hogas.png" %}" />
+      </div >
+      <div class="class_flechas">
+       <a href='#electronica'>
+        <i class="fa-solid fa-circle-arrow-left"></i>
+        </a>
+        <a href='#cocina'>
+          <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+<!--<div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>-->
+      
+</body>
+    
+
+
+{% endblock%}
